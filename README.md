@@ -57,3 +57,5 @@ Axelar を学習するためのリポジトリです。
 3. [サンプルリポジトリ](https://github.com/mashharuki/axelar-examples)
 4. [サンプルプロジェクト](https://github.com/mashharuki/cross-chain-airdrop-dapp)
 5. [How to Build a Cross-Chain Airdrop DApp With Solidity, Next.js and Axelar](https://axelar.network/blog/cross-chain-airdrop-dapp-tutorial)
+6. [Sandbox](https://xchainbox.axelar.dev/)
+7. [Axelar Scan](https://testnet.axelarscan.io/)
