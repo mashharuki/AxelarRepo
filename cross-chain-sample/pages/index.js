@@ -21,10 +21,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import AirdropContract from "../hardhat/artifacts/contracts/Airdrop.sol/Airdrop.json";
 
-const POLYGON_CONTRACT_ADDRESS =
-  process.env.NEXT_PUBLIC_POLYGON_CONTRACT_ADDRESS;
-const AVALANCHE_CONTRACT_ADDRESS =
-  process.env.NEXT_PUBLIC_AVALANCHE_CONTRACT_ADDRESS;
+const POLYGON_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_POLYGON_CONTRACT_ADDRESS;
+const AVALANCHE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_AVALANCHE_CONTRACT_ADDRESS;
 const AVALANCHE_RPC_URL = process.env.NEXT_PUBLIC_AVALANCHE_RPC_URL;
 
 /**
@@ -62,7 +60,7 @@ export default function Home() {
     write: approveWrite 
   } =
     useContractWrite({
-      address: "0x326C977E6efc84E512bB9C30f76E30c160eD06FB", // Address of the USDC contract
+      address: "0x2c852e740B62308c46DD29B982FBb650D063Bd07", // LINK token
       abi: erc20ABI,
       functionName: "approve",
       args: [
@@ -85,7 +83,7 @@ export default function Home() {
     isError: isAllowanceError,
     isLoading: isAllowanceLoading,
   } = useContractRead({
-    address: "0x326C977E6efc84E512bB9C30f76E30c160eD06FB", // Address of the USDC contract
+    address: "0x2c852e740B62308c46DD29B982FBb650D063Bd07", // LINK Token
     abi: erc20ABI,
     functionName: "allowance",
     args: [address, POLYGON_CONTRACT_ADDRESS],
